@@ -6,11 +6,11 @@ import Sidebar from './Sidebar';
 import Landing from './Landing';
 import Contact from './Contact';
 import BlankSpace from './BlankSpace';
-import './Global.css'
+import './Global.css';
 
 function App() {
   return (
-    <div>  
+    <div className="gray-bg">  
         <Header/>
         <Main />
         <Sidebar />
