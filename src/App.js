@@ -1,3 +1,4 @@
+import './Global.css';
 import React from 'react';
 import './App.css';
 import Header from './Header';
@@ -6,7 +7,8 @@ import Sidebar from './Sidebar';
 import Landing from './Landing';
 import Contact from './Contact';
 import BlankSpace from './BlankSpace';
-import './Global.css';
+
+// import your css file here
 
 function App() {
   return (

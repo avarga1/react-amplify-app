@@ -1,0 +1,22 @@
+body {
+    font-family: "Lucida Console", "Courier New", monospace;
+  }
+
+/* First, define the keyframes for the animation */
+@keyframes fade-loop {
+  0% {
+    background-color: black;
+  }
+  50% {
+    background-color: #cccccc;
+  }
+  100% {
+    background-color: black;
+  }
+}
+
+/* Then, apply the animation to the element you want to fade */
+.gray-bg {
+  animation: fade-loop 15s ease-in-out infinite;
+}
+
