@@ -3,8 +3,8 @@ import React from "react";
 import { Card, CardGroup } from "react-bootstrap";
 import "./Landing.css";
 import logo from "./assets/logo.png"; // import your logo image file
-import iframeResizer from 'iframe-resizer/js/iframeResizer.contentWindow.min.js';
 import BlankSpace from "./BlankSpace";
+
 
 
 const Landing = () => {
@@ -47,7 +47,7 @@ In my spare time, I enjoy fishing, hockey, jiu jitsu, and reading. I am also a s
             width="100%"
             height="100%"
             style={{ overflow: "scroll" }}
-            onLoad={() => iframeResizer()}
+         
           />
           <Card.Body>
             <Card.Title id='P1header'>Zen Cleaning</Card.Title>
