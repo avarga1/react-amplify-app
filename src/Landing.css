@@ -58,11 +58,13 @@
     /* Position the card relatively */
     position: relative;
     /* Set the width to 400px and allow the card to shrink or grow as necessary */
-    width: 40vw;
+    width: 50%;
     height: 40vh;
     /* Center align the content within the card */
     text-align: right;
-    
+    align-items: center;
+    /* Align the children horizontally within the container */
+    justify-content: center;
     transition: transform 0.5s ease-in-out;
   
     padding: 20px;
