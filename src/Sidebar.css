@@ -1,0 +1,36 @@
+.welcome-text {
+    font-size: 48px;
+    font-family: 'custom-font', Brush Script MT, Brush Script Std, cursive;
+    color: rgb(255, 255, 255);
+    animation: fadeIn 2s;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 70px;
+    font-size: 3.4vw;
+  
+    
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .welcome-text.fade-out {
+    animation: fadeOut 2s;
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0.01;
+    }
+  }
+
+  
