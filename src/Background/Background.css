@@ -80,3 +80,6 @@ body {
     z-index: 2;
 }
 
+.foreground-element {
+    z-index: 1;
+}
