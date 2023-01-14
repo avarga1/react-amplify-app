@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Contact.css';
+import logo from "../Assets/logo.png";
 
 const Contact = () => {
   const [name, setName] = useState('');
@@ -32,12 +33,14 @@ const Contact = () => {
   }
 
   return (
+
     <div className="Contact">
       {showErrorBox && (
         <div className="error-box">
           <p>{error}</p>
           <button onClick={handleCloseErrorBox}>Close</button>
         </div>
+        
       )}
       {showMessageBox && (
         <div className="message-box">
@@ -96,6 +99,9 @@ const Contact = () => {
 <br />
 <button type="submit">Send Message</button>
 </form>
+<img src={logo} alt="logo" className="logonew" />
+<div className="copyright">Copyright &copy; Austin Varga 2023</div>
+
 </div>
 );
 };

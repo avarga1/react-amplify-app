@@ -1,37 +1,37 @@
-import './Global.css';
+
 import React from 'react';
 import './App.css';
-import Header from './Header';
-import Main from './Main';
-import Sidebar from './Sidebar';
-import Landing from './Landing';
-import Contact from './Contact';
+import Header from './Header/Header';
+import Contact from './Footer/Contact';
+import NavBar from './NavBar/NavBar';
 import BlankSpace from './BlankSpace';
-
-// import your css file here
+import AboutMe from './AboutMe/AboutMe';
+import Logo from './Logo/Logo';
+import Background from './Background/Background';
+import Portfolio from './Portfolio/index.js';
+import SkillsList from './Skills/Skills';
 
 function App() {
   return (
     <div className="gray-bg">  
-        <Header/>
-        <Main />
-        <Sidebar />
-        <div id="home">
-            <Landing />
-        </div>
-            <div id="about">
-            {/* Your "About" component goes here */}
-        </div>  
-            <div id="projects">
-            {/* Your "Projects" component goes here */}
-        </div>
-            <BlankSpace height="350px" />
-            <div id="contact">
-        <Contact />
-        </div>
-                
+        <Background />
+        <NavBar />
+        <Header />
+        <Logo /> 
+        <BlankSpace height="150px" />
+        <AboutMe />
+        <BlankSpace height="150px" />
+        <h1 className="text-center">Projects: </h1>
+        <Portfolio />
+        <BlankSpace height="90vh" />
+        <SkillsList />
+        <BlankSpace height="850px" />
+        <div id="contact">
+            <Contact />
+        </div>        
     </div>
   );
 }
 
-export default App;
+export default App
+

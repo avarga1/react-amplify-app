@@ -1,8 +1,8 @@
 
 import React, { useState, useEffect } from 'react';
-import './Sidebar.css';
+import './Header.css';
 
-const Sidebar = () => {
+const Header = () => {
   const [welcomeText, setWelcomeText] = useState('');
   const welcomeMessage = 'Welcome to My Portfolio';
 
@@ -32,4 +32,4 @@ const Sidebar = () => {
   );
 };
 
-export default Sidebar;
+export default Header;

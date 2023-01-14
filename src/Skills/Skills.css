@@ -1,0 +1,128 @@
+.skills-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.skills-list-container {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    background: rgba(0,0,0,0.6);
+    border-radius: 10px;
+    padding: 20px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+}
+
+
+
+h1 {
+    font-size: 2rem;
+    margin: 0 0 20px;
+}
+
+.skills-categories-container {
+    display: flex;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.category-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 25%;
+    margin: 10px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.category-name {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+.category-name.active {
+    font-weight: bold;
+}
+
+.category-list {
+    position: absolute;
+    /* align the items centre*/
+    
+    
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    background: rgba(65, 65, 65, 0.7);
+    border-radius: px;
+    padding: 5px;
+    visibility: hidden;
+    opacity: 0.7;
+    transition: all 0.3s ease-in-out;
+    z-index: 11;
+}
+
+
+.category-container.active .category-list {
+    visibility: visible;
+    text-align: center;
+    opacity: 1;
+}
+
+.category-list li {
+width: 25%;
+margin: 10px;
+color: white;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 1.2rem;
+}
+
+.skill-logo {
+margin-right: 10px;
+font-size: 2.5rem;
+color: inherit;
+}
+
+.category-container:hover .category-list {
+visibility: visible;
+opacity: 1;
+}
+
+.category-list li:hover {
+background: rgba(255, 255, 255, 0.1);
+}
+
+
+.selected-category-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
