@@ -5,7 +5,10 @@ import AboutMe from './AboutMe/AboutMe';
 
 function App() {
   return (
-     <AboutMe />
+      <div className='gray-bg'>
+        <AboutMe />
+      </div>
+        
   );
 }
 
