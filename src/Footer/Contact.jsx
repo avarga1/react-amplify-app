@@ -99,7 +99,6 @@ const Contact = () => {
 <br />
 <button type="submit">Send Message</button>
 </form>
-<img src={logo} alt="logo" className="logonew" />
 <div className="copyright">Copyright &copy; Austin Varga 2023</div>
 
 </div>

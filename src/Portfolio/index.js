@@ -5,7 +5,7 @@ import DesktopPortfolio from './Desktop.jsx';
 
 
 function Portfolio() {
-    if (window.innerWidth < 600) {
+    if (window.innerWidth < 800) {
         return <MobilePortfolio />
     } else {
         return(
