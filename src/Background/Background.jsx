@@ -1,309 +1,33 @@
-import React from "react";  
+import React, { useState } from "react";  
 import './Background.css'   
 
 const HexBG = () => {
+    const [isHover, setIsHover] = useState(false);
+    const rows = 15;
+    const hexagonsPerRow = 20;
+    
     return (
+        <div className="hexagon-container">
             <div className="background">
                 <body id="body" className="body">
                     <div className="container">
-                        <div className="row">
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                        </div>
-                        <div className="row">
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                        </div>
-                        <div className="row">
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                        </div>
-                        <div className="row">
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                        </div>
-                        <div className="row">
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                        </div>
-                        <div className="row">
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                        </div>
-                        <div className="row">
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                        </div>
-                        <div className="row">
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                        </div>
-                        <div className="row">
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                        </div>
-                        <div className="row">
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                        </div>
-                        <div className="row">
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                        </div>
-                        <div className="row">
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                        </div>
-                        <div className="row">
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                        </div>                    <div className="row">
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                            <div className="hexagon"></div>
-                        </div>
-                        
+                        {Array(rows).fill().map((_, rowIndex) => (
+                            <div key={rowIndex} className="row">
+                                {Array(hexagonsPerRow).fill().map((_, hexagonIndex) => (
+                                    <div key={hexagonIndex} 
+                                        className={`hexagon ${isHover ? "hexagon-hover" : ""}`}
+                                        onMouseOver={() => setIsHover(true)}
+                                        onMouseOut={() => setIsHover(false)}>
+                                    </div>
+                                ))}
+                            </div>
+                        ))}
                     </div>
                 </body>
             </div>
+        </div>
     )
+    
 }
 
-export default HexBG
+export default HexBG;

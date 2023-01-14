@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 import AboutMe from './AboutMe/AboutMe';
 import BlankSpace from './BlankSpace';
-import Contact from './Footer/Contact';
 import Header from './Header/Header';
 import HexBG from './Background/Background.jsx';
 import Logo from './Logo/Logo';
@@ -14,10 +13,8 @@ function App() {
   return (
     <div>
       <div className='BG'>
-      
       <HexBG />
       </div>
-      <NavBar/>
       <BlankSpace height={100} />
       <Logo />
       <Header />
@@ -25,7 +22,7 @@ function App() {
       <Portfolio/>   
       <Skills/>
       <BlankSpace height={900} />
-      <Contact/>
+  
     </div>
   );
 }
