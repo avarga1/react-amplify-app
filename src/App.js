@@ -8,6 +8,7 @@ import Logo from './Logo/Logo';
 import NavBar from './NavBar/NavBar';
 import Portfolio from './Portfolio/index.js';
 import Skills from './Skills/Skills';
+import Contact from './Footer/Contact';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <div className='BG'>
       <HexBG />
       </div>
+      <NavBar />
       <BlankSpace height={100} />
       <Logo />
       <Header />
@@ -22,7 +24,7 @@ function App() {
       <Portfolio/>   
       <Skills/>
       <BlankSpace height={900} />
-  
+      <Contact/>
     </div>
   );
 }
