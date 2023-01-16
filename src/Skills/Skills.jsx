@@ -72,7 +72,6 @@ function Skills() {
         { 
         name: "Credentials",
         skills: [
-            { name: "DeepLearning.ai Intro to TensorFlow for AI/ML/DL", logo: "fab fa-coursera" },
             { name: "Meta: Front-End Developer Professional Course", logo: "fab fa-coursera" },
             { name: "Meta: Introduction to Front-End Development", logo: "fab fa-coursera" },
             { name: "Meta: Programming with JavaScript", logo: "fab fa-coursera" },
