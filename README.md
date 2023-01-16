@@ -1,3 +1,10 @@
+# Synopsis
+This is my react project, that was my capstone project for the Meta Front-end Developer course,
+I have hosted it through AWS amplify. 
+Master is the hosted branch so look therein for the code behind the site,
+feel free to visit @ www.austinvarga.ca
+Some of what was involved - JSX, CSS, React, AWS Amplify (route53, cloudfront, S3), 27 nespresso pods.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
