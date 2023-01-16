@@ -6,3 +6,7 @@
     width: 50%;
     float: middle;
 }
+
+.logo {
+    pointer-events: none;
+}

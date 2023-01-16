@@ -9,7 +9,7 @@ const HexBG = () => {
     return (
         <div className="hexagon-container">
             <div className="background">
-                <body id="body" className="body">
+               
                     <div className="container">
                         {Array(rows).fill().map((_, rowIndex) => (
                             <div key={rowIndex} className="row">
@@ -23,11 +23,12 @@ const HexBG = () => {
                             </div>
                         ))}
                     </div>
-                </body>
-            </div>
+                </div>
+         
         </div>
     )
-    
 }
+
+
 
 export default HexBG;
