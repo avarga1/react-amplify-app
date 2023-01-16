@@ -4,6 +4,7 @@ I have hosted it through AWS amplify.
 Master is the hosted branch so look therein for the code behind the site,
 feel free to visit @ www.austinvarga.ca
 Some of what was involved - JSX, CSS, React, AWS Amplify (route53, cloudfront, S3), 27 nespresso pods.
+Please note this is not the completed project there as some more features I am working on, however I have lots of more pressing projects on the go.
 
 # Getting Started with Create React App
 
