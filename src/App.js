@@ -18,17 +18,17 @@ function App() {
 
         <NavBar />
         <div id="home"></div>
-        
+        <BlankSpace height={100} />
         <Logo />
         <div id="about"></div>
         <Header />
         <AboutMe />  
-       
+        <BlankSpace height={100} />
         <div id="projects"></div>
         <Portfolio/>   
-
+        <BlankSpace height={300} />
         <Skills/>
- 
+        <BlankSpace height={900} />
         <Contact/>
         <div id="contact"></div>
     </div>
@@ -40,7 +40,6 @@ function App() {
         <div className="hexagons-container" style={{pointerEvents: "none"}}>
             <HexBG />
         </div>
-        <BlankSpace height={100} />
 */
 
 
