@@ -68,6 +68,26 @@ function Skills() {
             { name: "OpenCV", logo: "fab fa-python" },
             { name: "SciPy", logo: "fab fa-python" }
           ]
+        },
+        { 
+        name: "Credentials",
+        skills: [
+            { name: "DeepLearning.ai Intro to TensorFlow for AI/ML/DL", logo: "fab fa-coursera" },
+            { name: "Meta: Front-End Developer Professional Course", logo: "fab fa-coursera" },
+            { name: "Meta: Introduction to Front-End Development", logo: "fab fa-coursera" },
+            { name: "Meta: Programming with JavaScript", logo: "fab fa-coursera" },
+            { name: "Meta: Version Control", logo: "fab fa-coursera" },
+            { name: "Meta: HTML and CSS in depth", logo: "fab fa-coursera" },
+            { name: "Meta: React Basics", logo: "fab fa-coursera" },
+            { name: "Meta: Advanced Reacy", logo: "fab fa-coursera" },
+            { name: "Meta: Principles of UX/UI Design", logo: "fab fa-coursera" },
+            { name: "DeepLearning.ai Intro to TensorFlow for AI/ML/DL", logo: "fab fa-coursera" },
+            { name: "DeepLearning.ai Neural Networks and Deep Learning", logo: "fab fa-coursera" },
+            { name: "Udemy: Deep Learning and Computer Vision A-Z ", logo: "fab fa-coursera" },
+            { name: "Udemy: Deep Learning A-Z ", logo: "fab fa-coursera" },
+            { name: "Udemy: Machine Learning A-Z ", logo: "fab fa-coursera" },
+            { name: "Udemy: Deep Reinforcement Learning A-Z ", logo: "fab fa-coursera" },
+          ]
         }
       ]);
     
