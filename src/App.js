@@ -25,8 +25,10 @@ function App() {
         <div id="about"></div>
         <Header />
         <AboutMe />  
+        <BlankSpace height={100} />
         <div id="projects"></div>
         <Portfolio/>   
+        <BlankSpace height={300} />
         <Skills/>
         <BlankSpace height={900} />
         <Contact/>
