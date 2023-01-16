@@ -17,7 +17,11 @@ const AboutMe = () => {
                 full stack development. My other interests include machine learning,
                 data science, mobile development, and game development. 
                 Below are some examples of my work, as well as some of my skills.
-                Thanks for visiting!
+                Thanks for visiting! <br></br> <br></br>
+                * Please note this site is in development, and is not yet fully responsive.
+                The following issues are known, and will be addressed in the next release: <br></br>
+                - Mobile layout is not yet fully optimized so site is best viewed on desktop. <br></br>
+                - Backend is not yet fully implemented, so contact form is not yet functional. <br></br>
                 </p>
             </div>
         </div>

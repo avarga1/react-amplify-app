@@ -11,7 +11,6 @@ import Portfolio from './Portfolio/index.js';
 import Skills from './Skills/Skills';
 import Contact from './Footer/Contact';
 
-
 function App() {
   return (
     <div className="app-container">
