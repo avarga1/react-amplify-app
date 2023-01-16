@@ -15,9 +15,7 @@ import Contact from './Footer/Contact';
 function App() {
   return (
     <div className="app-container">
-        <div className="hexagons-container" style={{pointerEvents: "none"}}>
-            <HexBG />
-        </div>
+        
         <NavBar />
         <div id="home"></div>
         <BlankSpace height={100} />
