@@ -9,7 +9,6 @@ function Skills() {
           name: "Programming Languages",
           skills: [
             { name: "JavaScript", logo: "fab fa-js-square" },
-            { name: "PHP", logo: "fab fa-php" },
             { name: "C", logo: "fab fa-windows" },
             { name: "Python", logo: "fab fa-python" },
             { name: "MQL4", logo: "" }
