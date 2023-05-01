@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
+.website-card {
+    position: fixed;
+    top: 55%;
+    left: 58%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(180, 180, 180);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto Mono', monospace;
+  }
+  
+  .website-card h2 {
+    margin-bottom: 20px;
+    
+  }
+  
+  .website-iframe {
+    width: 100%;
+    height: calc(100% - 40px);
+    border: none;
+  }
+  

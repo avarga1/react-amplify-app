@@ -1,0 +1,65 @@
+.skills-card {
+  position: fixed;
+  top: -100%;
+  left: 42%;
+  width: 300px;
+  padding: 20px;
+  background-image: url('../public/SkillsCardBackground.jpg');
+  background-size: cover;
+  opacity: 0.9;
+  border-radius: 10px;
+  transition: top 0.5s ease-out;
+  font-family: 'Roboto Mono', monospace; /* Add this line */
+}
+.skills-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  z-index: -1;
+}
+  
+  .skills-card.visible {
+  top: 5%;
+  left: 42%;
+  }
+  
+  .skills-card h2 {
+  margin-bottom: 10px;
+  }
+  
+  .skill-header {
+  cursor: pointer;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 5px 0;
+  }
+  
+  .skill-header:hover {
+  background-color: #ddd;
+  }
+  
+  .skill-list {
+    max-height: 0; /* Add this line */
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+  }
+  
+  .skill-list.active {
+    max-height: 1000px;
+  }
+  
+  .skill-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 5px 0;
+  }
+  
+  .skill-list li {
+  margin-bottom: 5px;
+  }

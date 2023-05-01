@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
+
+.python-project-card {
+  position: fixed;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  width: 80%;
+  max-width: 800px;
+  min-height: 300px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  z-index: 5;
+  font-family: "Roboto Mono", monospace;
+}
+
+.python-project-card.hidden {
+  display: none;
+}
+
+.python-project-card .card-header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.python-project-card .technologies {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.python-project-card .github {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.python-project-card .video-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.python-project-card .video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

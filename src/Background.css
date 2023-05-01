@@ -1,0 +1,82 @@
+
+.hexagon-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index:-121;
+  }
+.BG{
+    position: fixed;
+    z-index: -1;
+}  
+
+
+
+body {
+    background-color: rgb(7, 6, 6);
+}
+
+.row {
+    display: inline-flex;
+    margin-top: -32px;
+    margin-left: -50px;
+}
+
+
+.row:nth-child(even) {
+
+    margin-left: 2px;
+}
+
+
+.hexagon {
+    width: 100px;
+    height: 110px;
+    margin: 2px;
+    background-color: rgb(105, 105, 105);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    animation: animation 6s linear infinite;
+    transition: 1.5s;
+    pointer-events: all;
+}
+
+.hexagon:hover{
+    background-color: rgb(0, 245, 20);
+    transition: 0s;
+}
+
+
+@keyframes animation {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.hexagon:after{
+    content: "";
+    position: absolute;
+    top : 4px;
+    bottom: 4px;
+    left: 4px;
+    right: 4px;
+    background-color: rgb(54, 53, 53);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.hexagon:before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: rgb(0, 0, 0,0.3);
+    z-index: 2;
+}
+
+.foreground-element {
+    z-index: 1;
+}

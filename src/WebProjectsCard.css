@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
+@keyframes slideIn {
+    0% {
+      top: 100%;
+      opacity: 0;
+    }
+    100% {
+      top: 20%;
+      opacity: 0.8;
+    }
+  }
+  
+  .web-projects-card {
+    position: absolute;
+    top: 0.2%;
+    left: 55%;
+    width: 500px;
+    height: 80px;
+    background-color: rgb(178, 178, 178);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translate(-50%, 0);
+    z-index: 2;
+    animation: slideIn 0.5s ease-out;
+    font-family: 'Roboto Mono', monospace;
+  }
+  
+  .web-projects-card h2 {
+    margin: 0;
+    margin-bottom: 3px;
+    
+  }
+  
+  .web-projects-buttons {
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  
+  .web-projects-buttons button {
+    background-color: #787878;
+    border: none;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px 10px;
+    margin: 10px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    outline: none;
+    font-family: 'Roboto Mono', monospace;
+  }
+  
+  .web-projects-buttons button:hover {
+    background-color: #000000;
+  }
+  
+  

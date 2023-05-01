@@ -1,0 +1,49 @@
+.hexagon {
+    position: relative;
+    width: 50px;
+    height: 28.87px;
+    background-color: black;
+    margin: 14.43px 0;
+    transition: all 0.3s ease;
+  }
+  
+  .hexagon:hover,
+  .hexagon:hover + .hexagon,
+  .hexagon:hover ~ .hexagon {
+    border: 2px solid;
+    animation: border-color-change 1s linear infinite;
+  }
+  
+  .hexagon:before,
+  .hexagon:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    transition: all 0.3s ease;
+  }
+  
+  .hexagon:before {
+    bottom: 100%;
+    border-bottom: 14.43px solid black;
+  }
+  
+  .hexagon:after {
+    top: 100%;
+    width: 0;
+    border-top: 14.43px solid black;
+  }
+  
+  @keyframes border-color-change {
+    0% {
+      border-color: red;
+    }
+    50% {
+      border-color: green;
+    }
+    100% {
+      border-color: blue;
+    }
+  }
+  

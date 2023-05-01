@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+@keyframes rgbBorder {
+    0% {
+      border-color: rgb(255, 0, 0);
+    }
+    33% {
+      border-color: rgb(0, 255, 0);
+    }
+    66% {
+      border-color: rgb(0, 0, 255);
+    }
+    100% {
+      border-color: rgb(255, 0, 0);
+    }
+  }
+  
+  .about-card {
+    /* Add border and animation */
+    border: 5px solid;
+    animation: rgbBorder 3s linear infinite;  
+    position: fixed;
+    top: 0%;
+    left: 250%;
+    width: 650px;
+    height: 100%;
+    background-image: url('../public/AboutCard.jpg');
+    background-size: cover;
+    opacity: 0.9;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    transition: left 0.5s ease-out;
+    font-family: 'Roboto Mono', monospace;
+  }
+
+  .about-card .text-container {
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+    padding: 15px;
+    border-radius: 5px;
+  }
+  
+  .about-card.visible {
+    left: 35%;
+  }
+  
+  
+  
+  .slide-enter {
+    transform: translateX(100%);
+  }
+  
+  .slide-enter-active {
+    transform: translateX(0%);
+    transition: transform 300ms;
+  }
+  
+  .slide-exit {
+    transform: translateX(0%);
+  }
+  
+  .slide-exit-active {
+    transform: translateX(100%);
+    transition: transform 300ms;
+  }
+  

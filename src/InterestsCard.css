@@ -1,0 +1,66 @@
+.interests-card {
+  position: fixed;
+  bottom: -100%;
+  left: 42%;
+  width: 300px;
+  padding: 20px;
+  background-image: url('../public/InterestsCardBackground.jpg');
+  background-size: cover;
+  opacity: 0.9;
+  border-radius: 10px;
+  transition: bottom 0.5s ease-out;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.interests-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  z-index: -1;
+}
+
+
+
+.interests-card.visible {
+  bottom: 10%;
+}
+
+.interests-card h2 {
+  margin-bottom: 10px;
+}
+
+.interest-header {
+  cursor: pointer;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 5px 0;
+}
+.interest-header:hover {
+  background-color: #ddd;
+}
+
+.interest-list {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+
+.interest-list.active {
+  max-height: 1000px;
+}
+
+.interest-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 5px 0;
+}
+
+.interest-list li {
+  margin-bottom: 5px;
+}
