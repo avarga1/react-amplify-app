@@ -112,19 +112,28 @@
 
 .social-icons {
   margin-top: auto;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   display: flex;
   gap: 20px;
+  font-size: 60px;
+}
+
+.social-icons .icon {
+  width: 32px; 
+  height: 32px; 
 }
 
 .icon {
-  font-size: 54px;
-  color: #fff;
-  cursor: pointer;
-  transition: all 0.3s ease;
+  color: #ffffff !important;
 }
 
 .icon:hover {
-  color: #00cc99;
+  color: #fdfcff !important;
 }
 
+
+
+.social-icons .icon:hover {
+  color: #ffffff; /* Change the color to your desired hover color */
+  
+}

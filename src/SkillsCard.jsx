@@ -50,6 +50,9 @@ const SkillsCard = ({ visible }) => {
           <li>SQL</li>
           <li>MySQL</li>
           <li>PostgreSQL</li>
+          <li>MongoDB</li>
+          <li>SQLite</li>
+          <li>Firebase</li>
         </ul>
       </div>
 
@@ -64,6 +67,17 @@ const SkillsCard = ({ visible }) => {
           <li>Scikit-learn</li>
           <li>OpenCV</li>
           <li>Azure AutoML</li>
+          <li>Google AutoML</li>
+          <li>Linear Regression Models</li>
+          <li>Logistic Regression Models</li>
+          <li>Neural Networks</li>
+          <li>Convolutional Neural Networks</li>
+          <li>Recurrent Neural Networks</li>
+          <li>Generative Adversarial Networks</li>
+          <li>Support Vector Machines</li>
+          <li>Reinforcement Learning</li>
+          
+          
         </ul>
       </div>
 

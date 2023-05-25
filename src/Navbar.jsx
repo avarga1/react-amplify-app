@@ -12,6 +12,7 @@ import WebsiteCard from './WebsiteCard';
 import PythonProjectCard from './PythonProjectsCard';
 import PythonProjectsSelector from './PythonProjectsSelector';
 
+
 const Navbar = () => {
   const [aboutCardVisible, setAboutCardVisible] = useState(false);
   const [educationCardVisible, setEducationCardVisible] = useState(false);
@@ -106,10 +107,10 @@ const Navbar = () => {
       <li onClick={toggleWebProjectsCard}>Web Development Projects</li>
     </ul>
     <div className="social-icons">
-      <a href="https://github.com/your_username" target="_blank" rel="noreferrer">
+      <a href="https://github.com/avarga1" target="_blank" rel="noreferrer">
         <FontAwesomeIcon icon={faGithub} />
       </a>
-      <a href="https://linkedin.com/in/your_username" target="_blank" rel="noreferrer">
+      <a href="https://www.linkedin.com/in/austin-varga-2611b9259/" target="_blank" rel="noreferrer">
         <FontAwesomeIcon icon={faLinkedin} />
       </a>
     </div>
@@ -145,10 +146,10 @@ const Navbar = () => {
   />
   <PythonProjectCard
     visible={selectedPythonProject === 1 && pythonProjectsCardVisible}
-    title="Project 1 - Web Scraping Financial Data"
-    technologies={['Python 3', 'HTTP requests', 'Beautiful Soup', 'CSV', 'Pandas', 're', 'Multiprocessing', 'Subprocess']}
-    github="https://github.com/avarga1/FBS-Scraper/tree/main"
-    videoUrl="https://www.youtube.com/embed/I23JX7AIau8"
+    title="Project 1 - Generative Adversarial Network, AI Avatar"
+    technologies={['Python', 'Tensorflow', 'Keras', 'Numpy', 'Matplotlib', 'PIL', 'OpenCV']}
+    github=""
+    videoUrl="https://www.youtube.com/embed/xYD7Y4oVSUU"
   />
   <PythonProjectCard
     visible={selectedPythonProject === 2 && pythonProjectsCardVisible}
@@ -159,10 +160,10 @@ const Navbar = () => {
   />
   <PythonProjectCard
     visible={selectedPythonProject === 3 && pythonProjectsCardVisible}
-    title="Project 3 - Another Title"
-    technologies={['Python', 'Technology3', 'Technology4']}
-    github="https://github.com/your_username/project3"
-    videoUrl="https://www.youtube.com/embed/your_video_id"
+    title="Project 3 - Web Scraping and Data Preprocessing"
+    technologies={['Python 3', 'HTTP requests', 'Beautiful Soup', 'CSV', 'Pandas', 're', 'Multiprocessing', 'Subprocess']}
+    github="https://github.com/avarga1/FBS-Scraper/tree/main"
+    videoUrl="https://www.youtube.com/embed/I23JX7AIau8"
   />
 </>
 
